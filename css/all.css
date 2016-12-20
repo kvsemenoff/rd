@@ -5085,3 +5085,11 @@ div.fixed_left {
 div.fixed_right {
 	height: 100px;
 }
+
+div.sidebar div.side_menu a {
+	 text-decoration: underline;
+}
+
+div.sidebar div.side_menu a.pjax {
+	 text-decoration: none;
+}
