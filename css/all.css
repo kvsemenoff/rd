@@ -5046,6 +5046,17 @@ width:225px;
 		text-align: unset;
 	}
 
+	.main-menu {
+		display: block;
+		width: 100%;
+		list-style: none !important;
+		height: 38px;
+	}
+	.main-menu li{
+		display: inline-block;
+		list-style: none !important;
+	}
+
 }
 
 .navbar ul {
