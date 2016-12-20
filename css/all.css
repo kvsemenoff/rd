@@ -48,9 +48,12 @@ body {
 	background: #ececec;
 	margin: 0;
     color: #010101;
-    font-family: "pf_dindisplay_prolight",Arial,Helvetica,sans-serif;
     font-size: 18px;
     line-height: 1.42857;
+
+	font-family: 'pf_dindisplay_proregular';
+	font-weight: normal;
+
 }
 
 html, * { padding: 0; margin: 0; }
@@ -5002,7 +5005,7 @@ form .field .err {
 .right-banner:after{
 	content:'';
 	display:block;
-width:225px;
+    width:225px;
 	height:322px; 
 	position:absolute;
 	left:0;
@@ -5092,4 +5095,11 @@ div.sidebar div.side_menu a {
 
 div.sidebar div.side_menu a.pjax {
 	 text-decoration: none;
+}
+
+p.p {   
+    font-size: 17px;   
+    line-height: 1.42857; 
+    font-family: 'pf_dindisplay_proregular';
+    font-weight: 0;
 }
