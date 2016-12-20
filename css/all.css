@@ -5077,3 +5077,11 @@ div.line {
 div.v-center div.line {
 	text-align:  center;
 } 
+
+div.fixed_left {
+	height: 100px;
+}
+
+div.fixed_right {
+	height: 100px;
+}
