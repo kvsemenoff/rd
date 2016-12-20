@@ -4230,7 +4230,7 @@ main .move, footer .content, .vitrina .nav, .vitrina .button-big {
 	vertical-align: middle;
 }
 .v-center .line {
-	display: block;
+	display:inline-block;
 	vertical-align: middle;
 	max-width: 99%;
 	font-size: 14px;
