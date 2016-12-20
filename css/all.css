@@ -89,6 +89,7 @@ h2 {
 	font-size: 36px;
 	color: #f36b22;
 	margin: 0 0 30px -8px;
+	text-align: center;
 }
 h2 span {
 	
@@ -628,7 +629,7 @@ header menu a {
 	font-size: 15px;
 	color: #ffffff;
 }
-header menu a:hover, header menu a.sel, header menu a.pjax-sel {
+header menu a:hover,  a.sel, header menu a.pjax-sel {
 	background: #454545;
 }
 header .fixed_left, header .fixed_right {
