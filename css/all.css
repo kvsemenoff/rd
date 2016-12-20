@@ -878,7 +878,7 @@ nav a {
 	width: 100%;
 	position: absolute;
 	left: 0;
-	top: 0;
+	top: 0;	
 }
 .vitrina .layer {
 	width: 100%;
@@ -5073,3 +5073,7 @@ width:225px;
 div.line {
 	margin-left: 12%;
 }
+
+div.v-center div.line {
+	text-align:  center;
+} 
