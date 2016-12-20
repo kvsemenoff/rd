@@ -100,6 +100,7 @@ h2.small {
 	font-size: 24px;
 	margin: 0 0 20px 0;
 	text-align: center;
+	color: #f36b22;
 }
 h2.md {font-size: 30px; line-height: 1;}
 
@@ -5034,6 +5035,7 @@ width:225px;
 	.head{
 		text-align: unset;
 	}
+
 }
 
 .navbar ul {
