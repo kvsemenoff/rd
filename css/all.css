@@ -99,6 +99,7 @@ h2.small {
 	line-height: 24px;
 	font-size: 24px;
 	margin: 0 0 20px 0;
+	text-align: center;
 }
 h2.md {font-size: 30px; line-height: 1;}
 
@@ -887,6 +888,7 @@ nav a {
 	height: 100%;
 }
 .vitrina .img {
+	display: block;
 }
 .vitrina .info {
 	background-size: cover !important;
@@ -4227,10 +4229,11 @@ main .move, footer .content, .vitrina .nav, .vitrina .button-big {
 	vertical-align: middle;
 }
 .v-center .line {
-	display: inline-block;
+	display: block;
 	vertical-align: middle;
 	max-width: 99%;
 	font-size: 14px;
+	text-align: justify;
 }
 .clr:after {display: block; content: ""; clear: both;}
 .f-gray {color: #999;}
