@@ -902,7 +902,7 @@ nav a {
 	display: block;
 }
 .vitrina .info {
-	background-size: cover !important;
+	background: #000;round-size: cover !important;
 	border-radius: 50%;
 	box-shadow: 10px 10px 20px rgba(0,0,0,0.2);
 	width: 40.5%;
