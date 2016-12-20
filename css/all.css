@@ -109,7 +109,10 @@ h2.small {
     font-weight: 0;
 
 }
-h2.md {font-size: 30px; line-height: 1;}
+h2.md {font-size: 30px; line-height: 1;     line-height: 1.42857; 
+    font-family: 'pf_dindisplay_proregular';
+    font-weight: 0;
+}
 
 h3 {
 	text-transform: uppercase;
@@ -5102,6 +5105,13 @@ div.sidebar div.side_menu a.pjax {
 
 p.p {   
     font-size: 17px;   
+    line-height: 1.42857; 
+    font-family: 'pf_dindisplay_proregular';
+    font-weight: 0;
+}
+
+h4.p2 {   
+    font-size: 23px;   
     line-height: 1.42857; 
     font-family: 'pf_dindisplay_proregular';
     font-weight: 0;
