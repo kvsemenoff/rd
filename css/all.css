@@ -5031,3 +5031,15 @@ width:225px;
 		text-align: unset;
 	}
 }
+
+.navbar ul {
+    background-color: #f47726;
+    
+}
+
+.nav {
+    width: 100%;
+    margin: 0 auto;
+
+}
+
