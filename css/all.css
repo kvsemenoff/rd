@@ -105,6 +105,9 @@ h2.small {
 	margin: 0 0 20px 0;
 	text-align: center;
 	color: #f36b22;
+    font-family: 'pf_dindisplay_proregular';
+    font-weight: 0;
+
 }
 h2.md {font-size: 30px; line-height: 1;}
 
