@@ -46,10 +46,11 @@
 
 body {
 	background: #ececec;
-	font-family: 'pf_dindisplay_prolight', Arial, Helvetica, sans-serif;
-	font-size: 18px;
-	color: #010101;
 	margin: 0;
+    color: #010101;
+    font-family: "pf_dindisplay_prolight",Arial,Helvetica,sans-serif;
+    font-size: 18px;
+    line-height: 1.42857;
 }
 
 html, * { padding: 0; margin: 0; }
@@ -4782,7 +4783,7 @@ main .move, footer .content, .vitrina .nav, .vitrina .button-big {
 	top:-7px;
 }
 .short-news .item .img img {border-radius: 50%; margin-top: 7px; margin-left: 10px;}
-.short-news .item em {
+.short-news em {
 	left:0;
 	border-radius: 50%;
 	background: #f36b22;
@@ -5061,7 +5062,6 @@ width:225px;
 
 .navbar ul {
     background-color: #f47726;
-    
 }
 
 .nav {
