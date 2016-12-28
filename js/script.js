@@ -981,7 +981,7 @@ var filter = {
 			html += '<div class="b20">' + item.desc + '</div>';
 		}
 		if (item.square && item.square != '') {
-			html += '<div><strong>Îïèñàíèå:</strong> ' + item.square + '</div>';
+			html += '<div><strong>????:</strong> ' + item.square + '</div>';
 		}
 		html += '</td>';
 		html += '</tr></table>';
@@ -1070,9 +1070,10 @@ var objects = {
 		if (typeof(objects_data) != 'undefined') {
 			var c = 1;
 			var html = '';
+			var j=0;
 			for (var i in objects_data) {
 				console.log(objects_data[i]);
-				html += '<div class="object object' + c + ' move" oid="' + i + '" onmouseleave="objects.hide_info(); " >';
+				html += '<div class="col-md-4 col-sm-6 col-xs-12"><div class="object-item"><div class="object object' + c + ' move" oid="' + i + '" onmouseleave="objects.hide_info(); " >';
 				html += '<a href="' + objects_data[i].url + '" class="pjax"><div class="photo" onmouseenter="objects.show_info(\'' + i + '\');">';
 				html += '<span class="img"><img src="' + objects_data[i].photo + '" /></span>';
 				if (objects_data[i].logo_svg && (!detectIE() || detectIE() >= 9)) {
@@ -1097,7 +1098,7 @@ var objects = {
 				else {
 					html += '<div class="b10">&nbsp;</div>';
 				}
-				html += '<a href="javascript:void(0)" class="button" onclick="objects.show_request(\'' + i + '\');"><span>ÎÒÏĞÀÂÈÒÜ ÇÀßÂÊÓ</span></a>';
+				html += '<a href="javascript:void(0)" class="button" onclick="objects.show_request(\'' + i + '\');"><span>????? ???</span></a>';
 				html += '<div class="info">';
 				html += '<div class="title"><span>' + objects_data[i].title + '</span></div>';
 				html += '<div class="content">';
@@ -1105,10 +1106,10 @@ var objects = {
 					html += '<div class="b5"> ' + objects_data[i].square + '</div>';
 				}
 				if (objects_data[i].rooms) {
-					html += '<div class="b5"><strong>Êîìíàòíîñòü:</strong> ' + objects_data[i].rooms + '</div>';
+					html += '<div class="b5"><strong>??????:</strong> ' + objects_data[i].rooms + '</div>';
 				}
 				if (objects_data[i].builds) {
-					html += '<div class="b5"><strong>Êîğïóñà:</strong> ' + objects_data[i].builds + '</div>';
+					html += '<div class="b5"><strong>????</strong> ' + objects_data[i].builds + '</div>';
 				}
 				if (objects_data[i].state) {
 					html += '<div class="b5"><strong>Ğ¡Ñ‚Ğ°Ğ´Ğ¸Ñ ÑÑ‚Ñ€Ğ¾Ğ¸Ñ‚ĞµĞ»ÑŒÑÑ‚Ğ²Ğ°:</strong> ' + objects_data[i].state + '</div>';
@@ -1122,11 +1123,15 @@ var objects = {
 				}
 				*/
 				html += '<div class="b30"></div>';
-				html += '<div align="center"><a href="' + objects_data[i].url + '" class="button pjax"><span>ÏÎÄĞÎÁÍÅÅ</span></a></div>';
+				html += '<div align="center"><a href="' + objects_data[i].url + '" class="button pjax"><span>?????/span></a></div>';
 				html += '</div>';
 				html += '</div>';
-				html += '</div>';
+				html += '</div></div></div>';
+				if (((j+1) % 3) === 0)   {
+					html += '<div class="clearfix"></div>';		
+				}
 				c = c < 3 ? c + 1 : 1;
+				j++;
 			}
 			html += '<br clear="all" />';
 			objects.block.html(html);

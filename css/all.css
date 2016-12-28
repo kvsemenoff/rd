@@ -226,7 +226,7 @@ hr {
 
 .body {
 	width: 100%;
-	min-width: 1150px;
+	//min-width: 1150px;
 }
 
 .content {
@@ -743,6 +743,7 @@ main .character img.char7 {margin-bottom:-20px;}
 	padding: 63px 0 15px 0;
 	margin-top: -48px;
 	background-color: #fff;
+	text-align: center;
 }
 .head .logo {
 	display: inline-block;
@@ -5012,4 +5013,21 @@ width:225px;
 
 .right-banner div span{
 	color:#000;
+}
+
+.prefer-item{
+	width: 100%;
+	max-width: 320px;
+	margin: 0 auto;
+}
+.object-item{
+	width: 100%;
+	max-width: 300px;
+	margin: 0 auto;
+}
+
+@media only screen and (min-width : 992px) {
+	.head{
+		text-align: unset;
+	}
 }
