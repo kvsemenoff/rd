@@ -614,12 +614,22 @@ header menu {
 	width: 100%;
 	text-align: center;
 	z-index: 10;
+	background-size: cover;
 }
 header menu .content {
 	width: 980px !important;
 }
 header menu table {
 	table-layout: fixed;
+}
+.main-menu {
+	display: block;
+	width: 100%;
+	list-style: none !important;
+}
+.main-menu li{
+	display: block;
+	list-style: none !important;
 }
 header menu a {
 	display: block;
