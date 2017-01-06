@@ -5117,6 +5117,14 @@ h4.p2 {
     font-weight: 0;
 }
 
-ul.main-menu li:hover {
+ul.main-menu a {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+ul.main-menu a:hover {
 	color: white;
+	text-decoration: none;
+	padding-left: 20px;
+	padding-right: 20px;
 }
