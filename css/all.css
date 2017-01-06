@@ -5116,3 +5116,7 @@ h4.p2 {
     font-family: 'pf_dindisplay_proregular';
     font-weight: 0;
 }
+
+ul.main-menu li:hover {
+	color: white;
+}

@@ -1070,7 +1070,7 @@ var objects = {
 		if (typeof(objects_data) != 'undefined') {
 			var c = 1;
 			var html = '';
-			var j=0;
+			html += "<div class='container'>"
 			for (var i in objects_data) {
 				console.log(objects_data[i]);
 				html += '<div class="col-md-4 col-sm-6 col-xs-12"><div class="object object' + c + ' move" oid="' + i + '" onmouseleave="objects.hide_info(); " >';
@@ -1127,12 +1127,9 @@ var objects = {
 				html += '</div>';
 				html += '</div>';
 				html += '</div></div>';
-				if (((j+1) % 3) === 0)   {
-					//html += '<div class="clearfix"></div>';		
-				}
 				c = c < 3 ? c + 1 : 1;
-				j++;
 			}
+			html += "</div>"
 			html += '<br clear="all" />';
 			objects.block.html(html);
 			$(window).trigger('scroll');
