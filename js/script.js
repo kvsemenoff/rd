@@ -1086,7 +1086,7 @@ var objects = {
 					html += '<span class="logo_txt"><span>' + objects_data[i].logo_txt + '</span></span>';
 				}
 				if (objects_data[i].offer && objects_data[i].offer != '') {
-					html += '<div class="offer"><span>' + objects_data[i].offer + '</span></div>';
+					html += '<div class="offer" style=\"width: 100px; height: 100px; border-radius: 50px;\"><span>' + objects_data[i].offer + '</span></div>';
 				}
 				html += '</div> </a>';
 				
