@@ -1070,7 +1070,7 @@ var objects = {
 		if (typeof(objects_data) != 'undefined') {
 			var c = 1;
 			var html = '';
-			html += "<div class='container'>"
+			html += "<div class='container' style='margin-left: 0;'>"
 			for (var i in objects_data) {
 				console.log(objects_data[i]);
 				html += '<div class="col-md-4 col-sm-6 col-xs-12"><div class="object object' + c + ' move" oid="' + i + '" onmouseleave="objects.hide_info(); " >';
