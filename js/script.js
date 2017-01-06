@@ -1090,7 +1090,8 @@ var objects = {
 				}
 				html += '</div> </a>';
 				
-				html += '<h3><a style="color: #f36b22; text-decoration: underline;" href="' + objects_data[i].url + '" class="title pjax"  >' + objects_data[i].title + '</a></h3>';
+				html += '<h3 style="font-family: \'pf_dindisplay_proregular\';font-size: 18px;font-weight: normal;'+
+				        'line-height: 18px;text-transform: uppercase;"><a style="color: #f36b22; text-decoration: underline;" href="' + objects_data[i].url + '" class="title pjax"  >' + objects_data[i].title + '</a></h3>';
 				html += '<div class="b20">' + objects_data[i].addr + ' </div>';
 				if (objects_data[i].site && objects_data[i].site != '') {
 					html += '<div class="b10"></div>';
