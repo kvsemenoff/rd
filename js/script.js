@@ -1073,7 +1073,7 @@ var objects = {
 			var j=0;
 			for (var i in objects_data) {
 				console.log(objects_data[i]);
-				html += '<div class="col-md-4 col-sm-6 col-xs-12"><div class="object-item"><div class="object object' + c + ' move" oid="' + i + '" onmouseleave="objects.hide_info(); " >';
+				html += '<div class="col-md-4 col-sm-6 col-xs-12"><div class="object object' + c + ' move" oid="' + i + '" onmouseleave="objects.hide_info(); " >';
 				html += '<a href="' + objects_data[i].url + '" class="pjax"><div class="photo" onmouseenter="objects.show_info(\'' + i + '\');">';
 				html += '<span class="img"><img src="' + objects_data[i].photo + '" /></span>';
 				if (objects_data[i].logo_svg && (!detectIE() || detectIE() >= 9)) {
@@ -1126,9 +1126,9 @@ var objects = {
 				html += '<div align="center"><a href="' + objects_data[i].url + '" class="button pjax"><span>?????/span></a></div>';
 				html += '</div>';
 				html += '</div>';
-				html += '</div></div></div>';
+				html += '</div></div>';
 				if (((j+1) % 3) === 0)   {
-					html += '<div class="clearfix"></div>';		
+					//html += '<div class="clearfix"></div>';		
 				}
 				c = c < 3 ? c + 1 : 1;
 				j++;
