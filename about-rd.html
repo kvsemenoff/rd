@@ -1,11 +1,9 @@
-<!doctype html>
-<html lang="ru">
+<!DOCTYPE html>
 <head>
-
     <title>О компании Роллос Дизайн.</title>
     <meta name="description" content="Рулонные шторы, жалюзи, плиссе, римские шторы, готовые и на заказ. Быстро, качественно, недорого. Предлагаем удобные и практичные решения для оформления любого интерьера. " />
     <meta name="keywords" content="рулонные шторы, жалюзи, плиссе, готовые купить в Москве, недорого, в интернет-магазине" />    
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
     <meta name="robots" content="noindex, nofollow" />
     <link href="css/all.css" type="text/css" data-template-style="true" rel="stylesheet" />
     <link href="/js/flowplayer/skin/custom.css?146848253235759" type="text/css" data-template-style="true" rel="stylesheet" />
@@ -55,7 +53,7 @@
             console.log(width, height);
             
             if (width < MIN_WIDTH || height < MIN_HEIGHT) {
-                if($( '#menu').is(":visible")){                    
+                if($( '#menu').is(":visible")){                                     
                     var menu = $("#menu").html();                    
                     $("#second_menu").html(menu);
                     $("#menu").hide();       
@@ -69,9 +67,23 @@
                 }            
             }
 
+            if (width < MIN_WIDTH || height < MIN_HEIGHT) {
+                if($( '#menu2').is(":visible")){
+                    var menu2 = $("#menu2").html();
+                    $("#menu2").hide();
+                }            
+            }
+
+            if (width >= MIN_WIDTH && height >= MIN_HEIGHT) {
+                if($( '#menu2right').is(":visible")){
+                    $("#menu2right").hide();
+                    $("#menu2").show();
+                }            
+            }
+
         }
 
-        setInterval(get_size, 500);
+        setInterval(get_size, 100);
     });
 </script>
 
@@ -88,37 +100,11 @@
     <!-- body -->
     <div class="body" rel="64351f89e8deeb9b76cc4a8f28710572">
         <a name="top"></a>
-        <!-- header -->
-<!--         <header>
-            <menu>
-                <div class="container">
-                    <table cellpadding="0" cellspacing="0" width="100%">
-                        <tr>
-                            <td><a href="about-rd.html" class="about_lnk" title="О компании Роллос Дизайн">О компании</a></td>
-                            <td><a href="products.htm" class="objects_lnk" title="Продукция">Продукция</a></td>
-                            <td><a href="services.htm" class="services_lnk" title="Услуги">Услуги</a></td>
-                            <td><a href="gallery.htm" class="services_lnk" title="Фото галерея работ">Галерея</a></td>
-                            <td><a href="news.htm" class="news_lnk news_item_lnk" title="Новости">Новости</a></td>
-                            <td><a href="dealers.htm" class="contacts_lnk" title="Дилерам">Дилерам</a></td>
-                            <td><a href="contact.htm" class="contacts_lnk" title="Контакты">Контакты</a></td>
-                        </tr>
-                    </table>
-                </div>
-            </menu>
-            <div class="fixed_left">
-                <a href="/" class="fixed_logo" title="На главную"></a>
-            </div>
-            <div class="fixed_right">
-                <span class="fixed_buttons"></span>
-                <a href="javascript:void(0)" class="fixed_menu" title="Меню"></a>
-            </div>
-        </header> -->
-
 
 <header>
 	<menu>
-    	<div class="container">
-    		<div class="col-md-12 col-xs-12 col-lg-12 col-sm-12">
+    	<div class="container" id="menu2">
+    		<div class="col-md-12 col-lg-12">
 		        <ul class="main-menu">
 		            <li class="active"><a style="color: white; background: black;" href="about-rd.html" class="about_lnk" title="О компании Роллос Дизайн">&nbsp&nbspО КОМПАНИИ&nbsp&nbsp</a></li>
 		            <li><a href="products.htm" class="objects_lnk" title="Продукция">ПРОДУКЦИЯ</a></li>
@@ -143,24 +129,200 @@
     </div>
 </header>
 
+
+
         <!-- main -->
         <main>
             <!-- head -->
             <div class="head">
                 <div class="content">
-                  <div class="row">
-                    <div class="col-md-9 col-xs-12 col-lg-9 col-sm-12">
+                  <div class="row" id='for_menu2'>
+                    <div class="col-md-9 col-xs-3 col-lg-9 col-sm-3">
                         <div>
                             <a href="/" class="logo"><img src="img/logo-rd-rus.png" /></a>
-                        </div>
+                        </div>                        
                     </div>
-                    <div class="col-md-3 col-xs-12 col-lg-3 col-sm-12">
+                    <div class="col-md-3 col-xs-9 col-lg-3 col-sm-9">
                         <div class="phone" style="right: 0;"><small>+7 495</small> 410 81 29<i class="scale"></i></div>
                     </div>
-                   </div>
+                  </div>
                 </div>
             </div>
             <!-- /head -->
+
+    <div class="menu" style="background: #f47726">
+       
+        <!-- Иконка меню -->
+        <div class="icon-close">
+            <img src="images/close-btn.png">
+        </div>
+ 
+        <!-- Меню -->
+            <menu>
+        <div class="container">
+            <div class="col-md-12 col-xs-6 col-lg-12 col-sm-6">
+                <ul class="main-menu" style="display: inline-block;">
+                    <li class="active"><a style="color: white; background: black;" href="about-rd.html" class="about_lnk" title="О компании Роллос Дизайн">&nbsp&nbspО КОМПАНИИ&nbsp&nbsp</a></li><br>
+                    <li><a href="products.htm" class="objects_lnk" title="Продукция">ПРОДУКЦИЯ</a></li><br>
+                    <li><a href="services.htm" class="services_lnk" title="Услуги">&nbsp&nbspУСЛУГИ&nbsp&nbsp</a></li><br>
+                    
+                    <li><a href="gallery.htm" class="services_lnk" title="Фото галерея работ">&nbsp&nbspГАЛЕРЕЯ&nbsp&nbsp</a></li><br>
+
+                    <li><a href="news.htm" class="news_lnk news_item_lnk" title="Новости">&nbsp&nbspНОВОСТИ&nbsp&nbsp</a></li><br>
+                    <li><a href="dealers.htm" class="contacts_lnk" title="Дилерам">&nbsp&nbspДИЛЕРАМ&nbsp&nbsp</a></li><br>
+                    <li><a href="contact.htm" class="contacts_lnk" title="Контакты">&nbsp&nbspКОНТАКТЫ&nbsp&nbsp</a></li>
+                </ul>               
+            </div>
+        </div>
+    </menu>
+
+    </div>
+ 
+    <!-- Main body -->
+    <div class="background">
+ 
+        <div class="icon-menu">
+            <img src="images/menu-ham-icon.png">
+            Menu
+        </div>
+    </div>
+
+
+
+    <style type="text/css">
+        body {
+  left: 0;
+  margin: 0;
+  position: relative;
+}
+ 
+ 
+/* Menu */
+ 
+.menu {
+  background: #555 url('images/menu-bg.jpg') repeat left top;
+  height: 100%;
+  left: 1500px;
+  position: fixed;
+  width: 285px;
+}
+ 
+ 
+/* Basic CSS */
+ 
+.background {
+
+  height: 100%;
+  width: 100%;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+ 
+.menu ul {
+  border-top: 1px solid #555;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ 
+.menu li {
+  border-bottom: 1px solid #555;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 45px;
+  padding-bottom: 3px;
+  padding-left: 20px;
+  padding-top: 3px;
+}
+ 
+.menu li:hover {
+  cursor: pointer;
+  background-color: #555;
+  }
+ 
+.menu a {
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+ 
+.icon-close {
+  cursor: pointer;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 6px;
+}
+ 
+.icon-menu {
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+  padding-top: 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+ 
+.icon-menu img {
+  margin-right: 5px;
+}
+    </style>
+<script type="text/javascript">
+    var main = function() { //главная функция
+
+    $('.menu').css('left', $( document ).width() + 'px'); /* прячем меню */
+
+ 
+    $('.fixed_menu').click(function() { /* выбираем класс icon-menu и
+               добавляем метод click с функцией, вызываемой при клике */
+
+        if ($( document ).width() < 1000) { 
+
+        $('.menu').animate({ //выбираем класс menu и метод animate
+ 
+            left: $( document ).width() - 285 + 'px' /* теперь при клике по иконке, меню, скрытое за
+               левой границей на 285px, изменит свое положение на 0px и станет видимым */
+ 
+        }, 200); //скорость движения меню в мс
+         
+        $('body').animate({ //выбираем тег body и метод animate
+ 
+            left:  '-285px' /* чтобы всё содержимое также сдвигалось вправо
+               при открытии меню, установим ему положение 285px */
+ 
+        }, 200); //скорость движения меню в мс
+        }
+    });
+ 
+ 
+/* Закрытие меню */
+ 
+    $('.icon-close').click(function() { //выбираем класс icon-close и метод click
+ 
+        $('.menu').animate({ //выбираем класс menu и метод animate
+ 
+            left: $( document ).width() + 'px' /* при клике на крестик меню вернется назад в свое
+               положение и скроется */
+ 
+        }, 200); //скорость движения меню в мс
+         
+    $('body').animate({ //выбираем тег body и метод animate
+ 
+            left: '0px' //а содержимое страницы снова вернется в положение 0px
+ 
+        }, 200); //скорость движения меню в мс
+    });
+};
+ 
+$(document).ready(main); /* как только страница полностью загрузится, будет
+               вызвана функция main, отвечающая за работу меню */
+
+</script>
+
             <!-- page_wrap -->
             <div class="page_wrap">
                 <!-- page -->

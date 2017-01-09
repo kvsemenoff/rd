@@ -91,7 +91,7 @@ $(document).ready(function() {
 	header.find('menu').css({'opacity': scr > 0 ? 0 : 1});
 	header.find('.fixed_left, .fixed_right').css({'opacity': scr > 0 ? 1 : 0});
 	header.find('.fixed_menu').bind('mouseenter', function() {
-		show_header();
+		//show_header();
 	});
 	//header.bind('mouseleave', function() {
 		//hide_header();
