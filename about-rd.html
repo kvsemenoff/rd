@@ -75,10 +75,7 @@
             }
 
             if (width >= MIN_WIDTH && height >= MIN_HEIGHT) {
-                if($( '#menu2right').is(":visible")){
-                    $("#menu2right").hide();
-                    $("#menu2").show();
-                }            
+                $("#menu2").show();                        
             }
 
         }
@@ -261,6 +258,21 @@ var main = function() { //главная функция
 
         $('.fixed_menu').bind( 'click.mynamespace', func );  
     });
+
+    setInterval(hide_menu, 100);
+
+    function hide_menu() {
+        if ($( document ).width() >= 1000) {         
+            $('.menu').animate({     
+                left: $( document ).width() + 'px'     
+            }, 50);
+
+            $('body').animate({         
+                left: '0px'         
+            }, 50);
+
+        }
+    }
 };
  
 $(document).ready(main); /* как только страница полностью загрузится, будет
