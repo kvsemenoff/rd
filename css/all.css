@@ -5133,7 +5133,11 @@ ul.main-menu a:hover {
 }
 
 
-
+@media only screen and (max-width : 600px) {
+	#menu2 {
+		display: none;
+	}
+}
 
 
 
