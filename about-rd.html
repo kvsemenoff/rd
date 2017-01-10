@@ -128,9 +128,6 @@
         <a href="javascript:void(0)" class="fixed_menu" title="Меню"></a>
     </div>
 </header>
-
-
-
         <!-- main -->
         <main>
             <!-- head -->
@@ -150,27 +147,21 @@
             </div>
             <!-- /head -->
 
-    <div class="menu" style="background: #f47726">
-       
-        <!-- Иконка меню -->
-        <div class="icon-close">
-            <img src="images/close-btn.png">
-        </div>
- 
+
+    <div class="menu">    
         <!-- Меню -->
             <menu>
-        <div class="container">
+        <div class="container" style="background: #f47726">
             <div class="col-md-12 col-xs-6 col-lg-12 col-sm-6">
-                <ul class="main-menu" style="display: inline-block;">
-                    <li class="active"><a style="color: white; background: black;" href="about-rd.html" class="about_lnk" title="О компании Роллос Дизайн">&nbsp&nbspО КОМПАНИИ&nbsp&nbsp</a></li><br>
-                    <li><a href="products.htm" class="objects_lnk" title="Продукция">ПРОДУКЦИЯ</a></li><br>
-                    <li><a href="services.htm" class="services_lnk" title="Услуги">&nbsp&nbspУСЛУГИ&nbsp&nbsp</a></li><br>
-                    
-                    <li><a href="gallery.htm" class="services_lnk" title="Фото галерея работ">&nbsp&nbspГАЛЕРЕЯ&nbsp&nbsp</a></li><br>
+                <ul class="main-menu right-menu">
+                    <li class="active"><a style="color: white; background: black;" href="about-rd.html" class="about_lnk" title="О компании Роллос Дизайн">О&nbspКОМПАНИИ</a></li>
+                    <li><a href="products.htm" class="objects_lnk" title="Продукция">ПРОДУКЦИЯ</a></li>
+                    <li><a href="services.htm" class="services_lnk" title="Услуги">УСЛУГИ</a></li><br>                    
+                    <li><a href="gallery.htm" class="services_lnk" title="Фото галерея работ">ГАЛЕРЕЯ</a></li>
 
-                    <li><a href="news.htm" class="news_lnk news_item_lnk" title="Новости">&nbsp&nbspНОВОСТИ&nbsp&nbsp</a></li><br>
-                    <li><a href="dealers.htm" class="contacts_lnk" title="Дилерам">&nbsp&nbspДИЛЕРАМ&nbsp&nbsp</a></li><br>
-                    <li><a href="contact.htm" class="contacts_lnk" title="Контакты">&nbsp&nbspКОНТАКТЫ&nbsp&nbsp</a></li>
+                    <li><a href="news.htm" class="news_lnk news_item_lnk" title="Новости">НОВОСТИ</a></li>
+                    <li><a href="dealers.htm" class="contacts_lnk" title="Дилерам">ДИЛЕРАМ</a></li>
+                    <li><a href="contact.htm" class="contacts_lnk" title="Контакты">КОНТАКТЫ</a></li>
                 </ul>               
             </div>
         </div>
@@ -178,19 +169,16 @@
 
     </div>
  
-    <!-- Main body -->
-    <div class="background">
- 
-        <div class="icon-menu">
-            <img src="images/menu-ham-icon.png">
-            Menu
-        </div>
-    </div>
 
 
+<style type="text/css">
 
-    <style type="text/css">
-        body {
+ul.right-menu li {
+    display : inline-block ;
+    width : 100px;
+}
+
+body {
   left: 0;
   margin: 0;
   position: relative;
@@ -200,7 +188,7 @@
 /* Menu */
  
 .menu {
-  background: #555 url('images/menu-bg.jpg') repeat left top;
+  background: white;
   height: 100%;
   left: 1500px;
   position: fixed;
@@ -221,24 +209,19 @@
 }
  
 .menu ul {
-  border-top: 1px solid #555;
   list-style: none;
   margin: 0;
   padding: 0;
 }
  
 .menu li {
-  border-bottom: 1px solid #555;
   font-family: 'Open Sans', sans-serif;
-  line-height: 45px;
-  padding-bottom: 3px;
-  padding-left: 20px;
-  padding-top: 3px;
+  line-height: 25px;
 }
  
 .menu li:hover {
   cursor: pointer;
-  background-color: #555;
+  background-color: black;
   }
  
 .menu a {
@@ -247,81 +230,37 @@
   text-decoration: none;
   text-transform: uppercase;
 }
- 
-.icon-close {
-  cursor: pointer;
-  padding-left: 10px;
-  padding-top: 10px;
-  padding-bottom: 6px;
-}
- 
-.icon-menu {
-  color: #fff;
-  cursor: pointer;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
-  padding-bottom: 25px;
-  padding-left: 25px;
-  padding-top: 25px;
-  text-decoration: none;
-  text-transform: uppercase;
-}
- 
-.icon-menu img {
-  margin-right: 5px;
-}
-    </style>
+</style>
+
 <script type="text/javascript">
-    var main = function() { //главная функция
+var main = function() { //главная функция
 
     $('.menu').css('left', $( document ).width() + 'px'); /* прячем меню */
-    var flag = false;
  
-    $('.fixed_menu').click(function() { /* выбираем класс icon-menu и
-               добавляем метод click с функцией, вызываемой при клике */
-
+    $('.fixed_menu').click(function() { 
         if ($( document ).width() < 1000) { 
-
-        $('.menu').animate({ //выбираем класс menu и метод animate
- 
-            left: $( document ).width() - 185 + 'px' /* теперь при клике по иконке, меню, скрытое за
-               левой границей на 285px, изменит свое положение на 0px и станет видимым */
- 
-        }, 50); //скорость движения меню в мс
-         
-        $('body').animate({ //выбираем тег body и метод animate
- 
-            left:  '-220px' /* чтобы всё содержимое также сдвигалось вправо
-               при открытии меню, установим ему положение 285px */
- 
-        }, 50); //скорость движения меню в мс
+            $('.menu').animate({
+                left: $( document ).width() - 220 + 'px' 
+            }, 50); //скорость движения меню в мс
+             
+            $('body').animate({ left:  '-220px' }, 50); 
         }
 
-        var func = function() { //выбираем класс icon-close и метод click              
+        var func = function() {
 
-                $('.menu').animate({ //выбираем класс menu и метод animate
-         
-                    left: $( document ).width() + 'px' /* при клике на крестик меню вернется назад в свое
-                       положение и скроется */
-         
-                }, 50); //скорость движения меню в мс
+            $('.menu').animate({     
+                left: $( document ).width() + 'px'     
+            }, 50);
                  
-            $('body').animate({ //выбираем тег body и метод animate
-         
-                    left: '0px' //а содержимое страницы снова вернется в положение 0px
-         
-                }, 50); //скорость движения меню в мс  
+            $('body').animate({         
+                left: '0px'         
+            }, 50);
 
-        $( ".fixed_menu" ).unbind( 'click.mynamespace');  
-    }
+            $( ".fixed_menu" ).unbind( 'click.mynamespace');  
+        }
 
-            $('.fixed_menu').bind( 'click.mynamespace', func );  
-
+        $('.fixed_menu').bind( 'click.mynamespace', func );  
     });
- 
- 
-/* Закрытие меню */
- 
 };
  
 $(document).ready(main); /* как только страница полностью загрузится, будет
