@@ -1149,50 +1149,20 @@ nav a {
 .objects_list {
 	padding-bottom: 10px;
 }
-
-
-@media only screen and (min-width : 600px) {
-	.object {
-		display: inline-block;
-		width: 315px;
-		margin: 0 0 65px 0;
-		text-align: center;
-	}
+.object {
+	display: inline-block;
+	width: 315px;
+	margin: 0 0 65px 0;
+	text-align: center;
 }
-
-@media only screen and (max-width : 600px) {
-	.object {
-		display: inline-block;
-		width: 215px;
-		margin: 0 0 65px 0;
-		text-align: center;
-	}
-}
-
-@media only screen and (max-width : 600px) {
-	.object .photo {
-		background: url(../img/object_bg.png) 0 0 no-repeat;
-		width: 88px;
-		height: 88px;
-		padding: 14px 0 13px 25px;
-		margin-bottom: 45px;
-		cursor: pointer;
-		display:block;
-		background-size: 100px;
-	}
-
-}
-
-@media only screen and (min-width : 600px) {
-	.object .photo {
-		background: url(../img/object_bg.png) 0 0 no-repeat;
-		width: 288px;
-		height: 288px;
-		padding: 14px 0 13px 25px;
-		margin-bottom: 45px;
-		cursor: pointer;
-		display:block;
-	}
+.object .photo {
+	background: url(../img/object_bg.png) 0 0 no-repeat;
+	width: 288px;
+	height: 288px;
+	padding: 14px 0 13px 25px;
+	margin-bottom: 45px;
+	cursor: pointer;
+	display:block;
 }
 .object .photo:before {
 	content: "";
@@ -1214,16 +1184,11 @@ nav a {
 	position: relative;
 	z-index: 1;
 }
-
-
-@media only screen and (min-width : 600px) {
-	.object .photo .img img {
-		width: 288px;
-		height: 288px;
-		border-radius: 50%;
-	}
+.object .photo .img img {
+	width: 288px;
+	height: 288px;
+	border-radius: 50%;
 }
-
 .object .photo .img:after {
 	content: "";
 	background-size: contain !important;
@@ -1243,7 +1208,7 @@ nav a {
 .object3 .photo .img:after {
 	background: url(../img/object_bg3.png) 0 0 no-repeat;
 }
-.object .photo .logo_txt {
+.object .photo .logo, .object .photo .logo_txt {
 	background: #ffffff;
 	border-radius: 50%;
 	overflow: hidden;
@@ -1255,45 +1220,10 @@ nav a {
 	bottom: -20px;
 	z-index: 3;
 }
-
-
-@media only screen and (min-width : 600px) {
-	.object .photo .logo {
-		background: #ffffff;
-		border-radius: 50%;
-		overflow: hidden;
-		width: 86px;
-		height: 86px;
-		padding: 38px 46px 46px 38px;
-		position: absolute;
-		right: -30px;
-		bottom: -20px;
-		z-index: 3;
-	}
+.object .photo .logo img {
+	width: 86px;
+	height: 86px;
 }
-
-@media only screen and (max-width : 600px) {
-	.object .photo .logo {
-		background: #ffffff;
-		border-radius: 50%;
-		overflow: hidden;
-		width: 56px;
-		height: 56px;
-		padding: 38px 46px 46px 38px;
-		position: absolute;
-		left: 150px;
-		top: 200px;
-		z-index: 3;
-	}
-}
-
-@media only screen and (min-width : 600px) {
-	.object .photo .logo img {
-		width: 86px;
-		height: 86px;
-	}
-}
-
 .object .photo .logo:after, .object .photo .logo_txt:after {
 	content: "";
 	background: #454545;
@@ -1357,7 +1287,6 @@ nav a {
 	margin-right: -.25em;
 	height: 100%; 
 }
-
 .object .photo .offer span {
 	display: inline-block;
 	text-align: center;
@@ -1365,34 +1294,16 @@ nav a {
 	white-space: normal;
 	word-wrap: break-word;
 }
-
-
-@media only screen and (max-width : 600px) {
-	.object .info {
-		box-shadow: 0px 17px 17px rgba(0,0,0,0.24);
-		border-radius: 30px;
-		width: 180px;
-		position: absolute;
-		left: 20px !important;
-		top: 35px;
-		z-index: 10;
-		display: none;
-	}
+.object .info {
+	box-shadow: 0px 17px 17px rgba(0,0,0,0.24);
+	border-radius: 30px;
+	width: 280px;
+	position: absolute;
+	left: 20px !important;
+	top: 35px;
+	z-index: 10;
+	display: none;
 }
-
-@media only screen and (min-width : 600px) {
-	.object .info {
-		box-shadow: 0px 17px 17px rgba(0,0,0,0.24);
-		border-radius: 30px;
-		width: 280px;
-		position: absolute;
-		left: 20px !important;
-		top: 35px;
-		z-index: 10;
-		display: none;
-	}
-}
-
 .object .info .title {
 	background: url(../img/pop_title2.png) 50% 100% no-repeat;
 	border-top-left-radius: 30px;
@@ -5221,47 +5132,9 @@ ul.main-menu a:hover {
 	padding-right: 20px;
 }
 
-@media only screen and (max-width : 600px) {
-	.small_image {
-        width: 50%;
-        height: auto;
-        border-radius: 50%;
-	}
-}
 
-@media only screen and (max-width : 600px) {
-	#menu2 {
-		display: none;
-	}
 
-    span.img {
-    	left: -85px;
-    	top: -10px;
-    }
 
-    div.offer span {
-    	width: 50px;
-    	height: 50px;
-    }
-
-    div.logo img {
-    	left: -100px;
-    	top: -200px;
-        width: 50%;
-        height: auto;
-    }
-
-	div.offer {
-		width: 100px; height: 100px;
-		top: 180px;
-		left: 100px;
-	}
-
-	a.pjax div.photo {
-        width: 50%;
-        height: auto;
-	}
-}
 
 
 

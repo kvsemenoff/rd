@@ -1075,18 +1075,18 @@ var objects = {
 				console.log(objects_data[i]);
 				html += '<div class="col-md-4 col-sm-6 col-xs-12"><div class="object object' + c + ' move" oid="' + i + '" onmouseleave="objects.hide_info(); " >';
 				html += '<a href="' + objects_data[i].url + '" class="pjax"><div class="photo" onmouseenter="objects.show_info(\'' + i + '\');">';
-				html += '<span class="img"><img class="small_image" src="' + objects_data[i].photo + '" /></span>';
+				html += '<span class="img"><img src="' + objects_data[i].photo + '" /></span>';
 				if (objects_data[i].logo_svg && (!detectIE() || detectIE() >= 9)) {
-					html += '<div class="logo"><img class="small_image" src="' + objects_data[i].logo_svg + '" /></div>';
+					html += '<span class="logo"><img src="' + objects_data[i].logo_svg + '" /></span>';
 				}
 				else if (objects_data[i].logo_png) {
-					html += '<span class="logo"><img class="small_image" src="' + objects_data[i].logo_png + '" /></span>';
-				} 
+					html += '<span class="logo"><img src="' + objects_data[i].logo_png + '" /></span>';
+				}
 				else if (objects_data[i].logo_txt) {
 					html += '<span class="logo_txt"><span>' + objects_data[i].logo_txt + '</span></span>';
 				}
 				if (objects_data[i].offer && objects_data[i].offer != '') {
-					html += '<div class="offer" style=\"border-radius: 50%;\"><span>' + objects_data[i].offer + '</span></div>';
+					html += '<div class="offer" style=\"width: 100px; height: 100px; border-radius: 50px;\"><span>' + objects_data[i].offer + '</span></div>';
 				}
 				html += '</div> </a>';
 				
