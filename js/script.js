@@ -74,6 +74,8 @@ var preloader= {
 };
 
 $(document).ready(function() {
+    $('.fixed_right').show();
+
 	// variables
 	page = $('body').attr('class');
 	loader = $('.ajax-loader');
@@ -89,7 +91,10 @@ $(document).ready(function() {
 	var header = $('header');
 	var scr = $(document).scrollTop();
 	header.find('menu').css({'opacity': scr > 0 ? 0 : 1});
-	header.find('.fixed_left, .fixed_right').css({'opacity': scr > 0 ? 1 : 0});
+	//header.find('.fixed_left, .fixed_right').css({'opacity': scr > 0 ? 1 : 0});
+
+	header.find('.fixed_left, .fixed_right').stop(true, true).animate({'opacity': 0, duration: 250});
+	
 	header.find('.fixed_menu').bind('mouseenter', function() {
 		//show_header();
 	});
@@ -228,7 +233,7 @@ function toggle_header() {
 	else {
 		header.find('menu').show().animate({'opacity': 1, y:  0, duration: 250});
 		header.find('.fixed_left, .fixed_right').animate({'opacity': 0, duration: 250}, function() {
-			header.find('.fixed_left, .fixed_right').hide();
+			//header.find('.fixed_left, .fixed_right').hide();
 		});
 	}
 }
