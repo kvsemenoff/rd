@@ -1158,7 +1158,7 @@ nav a {
 .object .photo {
 	background: url(../img/object_bg.png) 0 0 no-repeat;
 	width: 288px;
-	height: 288px;
+	//height: 288px;
 	padding: 14px 0 13px 25px;
 	margin-bottom: 45px;
 	cursor: pointer;
@@ -1223,6 +1223,11 @@ nav a {
 .object .photo .logo img {
 	width: 86px;
 	height: 86px;
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 0px;
+	left: 0px;
 }
 .object .photo .logo:after, .object .photo .logo_txt:after {
 	content: "";
@@ -3624,7 +3629,9 @@ footer {
 footer .content {
 	width: 940px;
 }
-
+footer a{
+	color: #F57B26;
+}
 .popup {
 	overflow: hidden;
 	position: absolute;
