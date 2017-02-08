@@ -74,8 +74,8 @@ var preloader= {
 };
 
 $(document).ready(function() {
-    $('.fixed_right').show();
-
+    $('.fixed_right').show();    
+    
 	// variables
 	page = $('body').attr('class');
 	loader = $('.ajax-loader');
@@ -224,7 +224,7 @@ function toggle_header() {
 	var header = $('header');
 	var scr = $(document).scrollTop();
 	header.find('menu, .fixed_left, .fixed_right').stop(true, false);
-	if (scr > 0) {
+	if (scr > 0 || $(document).width() < 500) {
 		header.find('menu').animate({'opacity': 0, y: -10, duration: 250}, function() {
 			header.find('menu').hide();
 		});
@@ -241,7 +241,7 @@ function toggle_header() {
 function show_header() {
 	var header = $('header');
 	var scr = $(document).scrollTop();
-	if (scr > 0) {
+	if (scr > 0 || $(document).width() < 500) {
 		header.find('menu').stop(true, true).show().css({y: -10}).animate({'opacity': 1, y: 0, duration: 250});
 		header.find('.fixed_left, .fixed_right').stop(true, true).animate({'opacity': 0, duration: 250});
 	}
